@@ -1,0 +1,144 @@
+:root {
+
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#imageSide {
+    width: 55vw;
+    height: 100%;
+    background-image: url("trees.jpg");
+    background-size: cover;
+    /* background-clip: content-box; */
+}
+
+#imageSide > div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 228px;
+    height: 120px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    
+}
+
+#imageSide img {
+    height: 100px;
+}
+
+#imageSide h1 {
+    margin: 0 0;
+    font-size: 100px;
+    color: white;
+}
+
+#formSide {
+    background-color: #F9FAFB;
+    width: 100%;
+}
+
+#formSide > h1 {
+    margin: 140px 20px 40px 52px;
+    max-width: 55ch;
+}
+
+#formSide > h1, #mainForm > legend {
+    font-size:x-large;
+    font-weight: bold;
+}
+
+#mainForm > legend {
+    margin-bottom: 10px;
+}
+
+
+form input {
+    width: 250px;
+    height: 25px;
+    border-color: #E5E7EB;
+    border-width: 1px;
+    border-style:groove;
+
+    border-radius: 3px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px 65px 15px 0px;
+}
+
+.formField > label {
+    text-transform: uppercase;
+
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+form {
+    background-color: white;
+}
+
+#mainForm {
+    padding-top: 0px;
+
+    display: flex;
+    flex-direction: row;
+
+    max-width: 800px;
+    flex-wrap: wrap;
+
+    margin-left: 40px;
+
+    /* gap: 20px; */
+}
+
+fieldset {
+    border-style: none;
+}
+
+fieldset#submitField {
+    background-color: #F9FAFB;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+#submitField button {
+    width: 180px;
+    height: 35px;
+
+    background-color: #596D48;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+#submitField a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+
+:invalid {
+    border-color: red;
+}
+
+:focus {
+    border-color: blue;
+}
